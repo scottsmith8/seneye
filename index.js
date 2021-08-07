@@ -9,7 +9,7 @@ try {
   devices.map(d => { console.log(d) })
 
   // Connect to Seneye
-  var device = new HID.HID('/dev/hidraw0');
+  var device = new HID.HID(9463,8708);
 
   // Hello
   device.write(Buffer.from('HELLOSUD'));
